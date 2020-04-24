@@ -15,8 +15,12 @@ namespace CriticalThinking
         public double requiredStorage;
 
         // constructor
-        public Applications()
+        public Applications(string name, string type, double reqRam, double reqStorage)
         {
+            applicationName = name;
+            applicationType = type;
+            requiredRAM = reqRam;
+            requiredStorage = reqStorage;
         }
 
         // Member methods

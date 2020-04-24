@@ -26,9 +26,9 @@ namespace CriticalThinking
         }
 
         // Member methods
-        public void InstallApplication(Applications application)
+        public bool InstallApplication(Applications application)
         {
-            processor.ProcessInstall(application, storage, temporaryMemory, graphics);
+            return processor.ProcessInstall(application, storage, temporaryMemory, graphics);
          
         }
     }

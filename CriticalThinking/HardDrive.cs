@@ -18,6 +18,7 @@ namespace CriticalThinking
         {
             this.totalStorage = totalStorage;
             this.availableStorage = availableStorage;
+            applicationsInHardDrive = new List<Applications>();
         }
 
         // Member methods

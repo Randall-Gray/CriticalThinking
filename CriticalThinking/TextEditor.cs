@@ -11,12 +11,8 @@ namespace CriticalThinking
         // Member variables
 
         // constructor
-        public TextEditor()
+        public TextEditor(string name, string type, double reqRam, double reqStorage) : base(name, type, reqRam, reqStorage)
         {
-            applicationName = "Slack";
-            applicationType = "Messaging service";
-            requiredRAM = 4.0;  //In Gigabytes
-            requiredStorage = 0.512;  //In Gigabytes
         }
 
         // Member methods

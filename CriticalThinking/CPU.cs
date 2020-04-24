@@ -20,13 +20,15 @@ namespace CriticalThinking
         }
 
         // Member methods
-        public void ProcessInstall(Applications app, HardDrive hardDrive, RAM ram, GPU gpu)
+        public bool ProcessInstall(Applications app, HardDrive hardDrive, RAM ram, GPU gpu)
         {
-            if (CheckRequirements(app, hardDrive, ram, gpu))
+            bool installOK = CheckRequirements(app, hardDrive, ram, gpu);
+            if (installOK)
             {
                 hardDrive.applicationsInHardDrive.Add(app);
                 hardDrive.availableStorage -= app.requiredStorage;
             }
+            return installOK;
         }
         public bool CheckRequirements(Applications app, HardDrive hardDrive, RAM ram, GPU gpu)
         {
