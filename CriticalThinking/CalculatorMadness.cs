@@ -18,6 +18,21 @@ namespace CriticalThinking
             int result = numberOne + numberTwo;
             return result;
         }
+        public int SubtractTwoNumbers(int numberOne, int numberTwo)
+        {
+            int result = numberOne - numberTwo;
+            return result;
+        }
+        public int MultiplyTwoNumbers(int numberOne, int numberTwo)
+        {
+            int result = numberOne * numberTwo;
+            return result;
+        }
+        public int DivideTwoNumbers(int numberOne, int numberTwo)
+        {
+            int result = numberOne / numberTwo;
+            return result;
+        }
 
         public void RunCalculations()
         {
