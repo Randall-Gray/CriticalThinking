@@ -13,15 +13,21 @@ namespace CriticalThinking
         // constructor
 
         // Member methods
-        public void AddTwoNumbers(int numberOne, int numberTwo)
+        public int AddTwoNumbers(int numberOne, int numberTwo)
         {
             int result = numberOne + numberTwo;
-            Console.WriteLine("The result of this addtion is: " + result);
+            return result;
         }
 
         public void RunCalculations()
         {
-            AddTwoNumbers(5, 7);
+            Console.WriteLine("Enter first number to add: ");
+            int value1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter second number to add: ");
+            int value2 = int.Parse(Console.ReadLine());
+
+            int output = AddTwoNumbers(value1, value2);
+            Console.WriteLine("The result is: " + output);
         }
     }
 }

@@ -10,6 +10,9 @@ namespace CriticalThinking
     {
         static void Main(string[] args)
         {
+            CalculatorMadness calculator = new CalculatorMadness();
+            calculator.RunCalculations();
+            Console.ReadLine();
         }
     }
 }
