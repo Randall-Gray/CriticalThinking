@@ -10,7 +10,15 @@ namespace CriticalThinking
     {
         static void Main(string[] args)
         {
-            for (int i = 9; i >= 0; i--)
+            int intInput = -1;
+            bool validInput = false;
+
+            while (!validInput || intInput < 0)
+            {
+                Console.WriteLine("Enter number of times (positive integer) to run loop: ");
+                validInput = int.TryParse(Console.ReadLine(), out intInput);
+            }
+            for (int i = 0; i < intInput; i++)
             {
                 Console.WriteLine(i);
             }
