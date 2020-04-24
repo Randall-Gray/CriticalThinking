@@ -13,15 +13,18 @@ namespace CriticalThinking
             int counter = 0;
             bool validInput = false;
 
-            // Make sure user enters an integer.
-            while (!validInput)
+            // Runs until the user enters the integer 42.
+            // Runs at least once, could use a do{}while() loop instead.
+            while (!validInput || counter != 42)
             {
-                Console.WriteLine("Enter number of times (integer) to run loop: ");
+                Console.WriteLine("Please enter the number 42 to run loop: ");
                 validInput = int.TryParse(Console.ReadLine(), out counter);
+                if (!validInput || counter != 42)
+                    Console.WriteLine("WRONG!!! Please try again");
             }
             
-            // will iterate 25 - counter times.  Negative number makes it run more than 25 times.
-            while (counter < 25)
+            // with counter initially set to 42, loop won't run
+            while (counter != 42)
             {
                 counter++;
             }
