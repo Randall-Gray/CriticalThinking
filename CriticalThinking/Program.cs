@@ -10,10 +10,17 @@ namespace CriticalThinking
     {
         static void Main(string[] args)
         {
-            int counter = 5;
+            int counter = 0;
+            bool validInput = false;
 
-            // while loop will run 20 times.
-            // Same as a for loop just written differently.
+            // Make sure user enters an integer.
+            while (!validInput)
+            {
+                Console.WriteLine("Enter number of times (integer) to run loop: ");
+                validInput = int.TryParse(Console.ReadLine(), out counter);
+            }
+            
+            // will iterate 25 - counter times.  Negative number makes it run more than 25 times.
             while (counter < 25)
             {
                 counter++;
