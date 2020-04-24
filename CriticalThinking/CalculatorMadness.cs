@@ -18,5 +18,10 @@ namespace CriticalThinking
             int result = numberOne + numberTwo;
             Console.WriteLine("The result of this addtion is: " + result);
         }
+
+        public void RunCalculations()
+        {
+            AddTwoNumbers(5, 7);
+        }
     }
 }
