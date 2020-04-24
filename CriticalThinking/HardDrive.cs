@@ -13,6 +13,11 @@ namespace CriticalThinking
         double availableStorage;
 
         // constructor
+        public HardDrive(double totalStorage, double availableStorage)
+        {
+            this.totalStorage = totalStorage;
+            this.availableStorage = availableStorage;
+        }
 
         // Member methods
     }

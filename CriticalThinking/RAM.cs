@@ -13,6 +13,11 @@ namespace CriticalThinking
         string brand;
 
         // constructor
+        public RAM(double totalGigabytes, string brand)
+        {
+            this.totalGigabytes = totalGigabytes;
+            this.brand = brand;
+        }
 
         // Member methods
     }

@@ -11,8 +11,13 @@ namespace CriticalThinking
         // Member variables
         string manufacturer;
         double effectiveMemory;
-        
+
         // constructor
+        public GPU(string manufacturer, double effectiveMemory)
+        {
+            this.manufacturer = manufacturer;
+            this.effectiveMemory = effectiveMemory;
+        }
 
         // Member methods
     }

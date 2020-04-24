@@ -13,6 +13,11 @@ namespace CriticalThinking
         string name;
 
         // constructor
+        public CPU(string manufacturer, string name)
+        {
+            this.manufacturer = manufacturer;
+            this.name = name;
+        }
 
         // Member methods
     }
