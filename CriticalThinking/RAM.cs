@@ -9,7 +9,7 @@ namespace CriticalThinking
     class RAM
     {
         // Member variables
-        double totalGigabytes;
+        public double totalGigabytes;
         string brand;
 
         // constructor

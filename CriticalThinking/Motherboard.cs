@@ -26,5 +26,14 @@ namespace CriticalThinking
         }
 
         // Member methods
+        public void InstallApplication(Applications application)
+        {
+            if (temporaryMemory.totalGigabytes >= application.requiredRAM &&
+                storage.availableStorage >= application.requiredStorage)
+            {
+                storage.applicationsInHardDrive.Add(application);
+                storage.availableStorage -= application.requiredStorage;
+            }
+        }
     }
 }

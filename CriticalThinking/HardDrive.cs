@@ -10,7 +10,8 @@ namespace CriticalThinking
     {
         // Member variables
         double totalStorage;
-        double availableStorage;
+        public double availableStorage;
+        public List<Applications> applicationsInHardDrive;
 
         // constructor
         public HardDrive(double totalStorage, double availableStorage)
