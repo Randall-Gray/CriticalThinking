@@ -10,14 +10,14 @@ namespace CriticalThinking
     {
         static void Main(string[] args)
         {
-            string stringInput = "Hello World";
+            int counter = 5;
 
-            for (int i = 0; i < stringInput.Length; i++)
+            // while loop will run 20 times.
+            // Same as a for loop just written differently.
+            while (counter < 25)
             {
-                if (i % 3 == 0)
-                    Console.WriteLine(stringInput[i]);
+                counter++;
             }
-            Console.ReadLine();
         }
     }
 }
