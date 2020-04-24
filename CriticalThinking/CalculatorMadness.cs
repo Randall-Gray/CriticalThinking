@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace CriticalThinking
 {
-    class Program
+    class CalculatorMadness
     {
-        static void Main(string[] args)
-        {
-        }
+        // Member variables
+
+        // constructor
+
+        // Member methods
     }
 }
