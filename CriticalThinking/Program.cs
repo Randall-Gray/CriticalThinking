@@ -14,7 +14,8 @@ namespace CriticalThinking
 
             for (int i = 0; i < stringInput.Length; i++)
             {
-                Console.WriteLine(stringInput[i]);
+                if (i % 2 == 0)
+                    Console.WriteLine(stringInput[i]);
             }
             Console.ReadLine();
         }
