@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CriticalThinking
 {
-    class Applications
+    abstract class Applications
     {
         // Member variables
         public string applicationName;
@@ -17,12 +17,12 @@ namespace CriticalThinking
         // constructor
         public Applications()
         {
-            applicationName = "Slack";
-            applicationType = "Messaging service";
-            requiredRAM = 4.0;  //In Gigabytes
-            requiredStorage = 0.512;  //In Gigabytes
         }
 
         // Member methods
+        public virtual double GraphicsRequirement()
+        {
+            return 0;
+        }
     }
 }

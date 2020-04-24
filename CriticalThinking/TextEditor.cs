@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace CriticalThinking
 {
-    class GPU
+    class TextEditor : Applications
     {
         // Member variables
-        string manufacturer;
-        public double effectiveMemory;
 
         // constructor
-        public GPU(string manufacturer, double effectiveMemory)
+        public TextEditor()
         {
-            this.manufacturer = manufacturer;
-            this.effectiveMemory = effectiveMemory;
+            applicationName = "Slack";
+            applicationType = "Messaging service";
+            requiredRAM = 4.0;  //In Gigabytes
+            requiredStorage = 0.512;  //In Gigabytes
         }
 
         // Member methods
