@@ -36,7 +36,7 @@ namespace CriticalThinking
 
         public void RunCalculations()
         {
-            int output = AddTwoNumbers(AddTwoNumbers(8, 40), AddTwoNumbers(200, 50));
+            int output = AddTwoNumbers(SubtractTwoNumbers(AddTwoNumbers(6, 5), DivideTwoNumbers(MultiplyTwoNumbers(40 , 35), 4)), MultiplyTwoNumbers(2, 2));
             Console.WriteLine("The result is: " + output);
         }
     }
